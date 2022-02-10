@@ -33,7 +33,7 @@ class _FabAppState extends State<FabApp> {
     return Scaffold(
       appBar: AppBar(title: const Text("Widget Exercise")),
       body: getListView(i),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         tooltip: "Add one more item",
@@ -41,7 +41,7 @@ class _FabAppState extends State<FabApp> {
           setState(() {
             i++;
             ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text("Want to increase the number of problems to $i")));
+              SnackBar(content: Text("Current number of the problems is $i")));
           });
         })
     );
