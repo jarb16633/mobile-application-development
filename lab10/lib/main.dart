@@ -35,7 +35,7 @@ class _FabAppState extends State<FabApp> {
       body: getListView(i),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         tooltip: "Add one more item",
         onPressed: () {
           setState(() {
